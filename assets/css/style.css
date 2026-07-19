@@ -1,0 +1,168 @@
+:root {
+  --brand: #C9752B;
+  --brand-dark: #8A4A16;
+  --brand-light: #FDF3E7;
+  --cream: #FFF9F1;
+  --ink: #2E2018;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--ink);
+  background-color: var(--cream);
+}
+
+h1, h2, h3, .font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+.brand-accent { color: var(--brand); }
+
+.btn-brand {
+  background-color: var(--brand);
+  border-color: var(--brand);
+  color: #fff;
+  font-weight: 500;
+  transition: all .2s ease;
+}
+.btn-brand:hover {
+  background-color: var(--brand-dark);
+  border-color: var(--brand-dark);
+  color: #fff;
+}
+.btn-outline-brand {
+  border: 2px solid var(--brand);
+  color: var(--brand);
+  font-weight: 500;
+}
+.btn-outline-brand:hover {
+  background-color: var(--brand);
+  color: #fff;
+}
+
+.nav-link { font-weight: 500; color: var(--ink) !important; }
+.nav-link.active, .nav-link:hover { color: var(--brand) !important; }
+
+/* HERO */
+.hero-section {
+  background: linear-gradient(135deg, var(--brand-light) 0%, var(--cream) 100%);
+  padding: 100px 0 80px;
+  overflow: hidden;
+}
+.hero-badge {
+  display: inline-block;
+  background: #fff;
+  border-radius: 50px;
+  padding: 6px 18px;
+  font-size: .85rem;
+  font-weight: 600;
+  color: var(--brand);
+  box-shadow: 0 4px 15px rgba(0,0,0,.06);
+}
+.hero-title { font-size: 3rem; font-weight: 700; line-height: 1.15; }
+.hero-emoji-float {
+  font-size: 7rem;
+  text-align: center;
+  animation: float 3.5s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-18px); }
+}
+
+/* SECTION TITLE */
+.section-title { font-weight: 700; font-size: 2.2rem; }
+.section-subtitle { color: #8a7c6f; max-width: 600px; margin: 0 auto; }
+
+/* PRODUCT CARD */
+.product-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #f0e5d8;
+  transition: all .25s ease;
+  height: 100%;
+}
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(201,117,43,.15);
+}
+.product-emoji {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  background: var(--brand-light);
+}
+.product-body { padding: 20px; }
+.product-price { color: var(--brand); font-weight: 700; font-size: 1.2rem; }
+.rating-stars { color: #f5b301; font-size: .9rem; }
+
+/* WHY US ICONS */
+.why-icon {
+  width: 70px; height: 70px;
+  border-radius: 50%;
+  background: var(--brand-light);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.8rem; color: var(--brand);
+  margin: 0 auto 15px;
+}
+
+/* TESTIMONIAL */
+.testi-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 30px;
+  height: 100%;
+  border: 1px solid #f0e5d8;
+}
+
+/* FOOTER */
+.footer-section { background-color: #241811; }
+.footer-text { color: #cbb9a8; }
+.footer-links a { color: #cbb9a8; text-decoration: none; line-height: 2; }
+.footer-links a:hover { color: var(--brand); }
+.footer-social {
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.08);
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; text-decoration: none;
+}
+.footer-social:hover { background: var(--brand); }
+
+/* PAGE HEADER (banner untuk sub halaman) */
+.page-banner {
+  background: var(--brand-light);
+  padding: 60px 0;
+  text-align: center;
+}
+
+/* WHATSAPP FLOAT BUTTON */
+.wa-float {
+  position: fixed;
+  bottom: 25px; right: 25px;
+  width: 60px; height: 60px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-size: 1.7rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,.2);
+  z-index: 999;
+  text-decoration: none;
+  animation: pulse 2s infinite;
+}
+.wa-float:hover { color: #fff; }
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37,211,102,.5); }
+  70% { box-shadow: 0 0 0 14px rgba(37,211,102,0); }
+  100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+}
+
+/* ADMIN */
+.admin-sidebar { min-height: 100vh; background: #241811; }
+.admin-sidebar .nav-link { color: #cbb9a8 !important; }
+.admin-sidebar .nav-link.active, .admin-sidebar .nav-link:hover { color: #fff !important; background: var(--brand); border-radius: 8px; }
+.admin-login-wrap { min-height: 100vh; display:flex; align-items:center; justify-content:center; background: var(--brand-light); }
+.stat-card { border-radius: 16px; border: none; color: #fff; }
