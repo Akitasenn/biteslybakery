@@ -1,4 +1,4 @@
-# Bitesly Bakery — Website E-Commerce (MVP)
+# Bitesly Bakery — Website E-Commerce
 
 Website resmi Bitesly Bakery: katalog produk digital dengan pemesanan
 langsung via WhatsApp, dilengkapi Admin Panel untuk kelola produk.
@@ -84,11 +84,6 @@ bitesly-bakery/
 Sesuai roadmap di dokumen bisnis: Login Pelanggan, Shopping Cart,
 Checkout Online, Payment Gateway (Midtrans), Riwayat Pesanan, Tracking
 Order, Voucher, dan Review Produk.
-
-## 7. Catatan Keamanan (untuk pengembangan lanjut sebelum go-live publik)
-
-- Ganti password admin default sebelum online.
-- Tambahkan validasi upload gambar lebih ketat (cek MIME type asli,
   bukan hanya ekstensi) bila fitur upload dibuka ke publik.
 - Aktifkan HTTPS saat deploy ke hosting produksi.
 - Pertimbangkan rate-limiting pada `login.php` untuk mencegah brute force.
